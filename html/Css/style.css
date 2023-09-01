@@ -1,6 +1,45 @@
-.big-text{
-    text-align:center;
-    width:300px;
-    max-width:500px;
-  }
-  
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* A light gray background for the entire page */
+    font-family: Arial, sans-serif;
+}
+
+/* Create a white "toolbar" at the top */
+.toolbar {
+    background-color: #ffffff; /* White background for the toolbar */
+    height: 60px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Style the toolbar content */
+.toolbar-content {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+/* Add a logo or title to the toolbar */
+.toolbar-title {
+    font-size: 24px;
+    color: #333333;
+}
+
+
+  .circle {
+    width: 400px; /* Adjust the size as needed */
+    height: 400px; /* Same as width to create a circle */
+    background-color: transparent; /* Transparent background */
+    border-radius: 50%; /* Makes the element a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Center the circle horizontally */
+}
+
+.circle img {
+    max-width: 90%; /* Adjust the size of the image */
+    height: auto;
+    border-radius: 60%; /* Ensure the image is also a circle */
+}  
