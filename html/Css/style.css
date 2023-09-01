@@ -1,6 +1,11 @@
-.big-text{
+div h1{
     text-align:center;
-    width:300px;
-    max-width:500px;
+    width:auto;
+    font-size: 100px;
+    
+  }
+
+  .circle{
+    justify-content: center;
   }
   
