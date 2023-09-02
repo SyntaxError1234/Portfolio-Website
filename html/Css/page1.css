@@ -1,0 +1,27 @@
+form {
+    text-align: center;
+
+}
+
+.form-container {
+    display: inline-block;
+    text-align: left;
+}
+
+.form-field {
+    margin: 10px;
+}
+
+.inline-fields{
+    display:inline-block;
+    text-align: left;
+}    
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width:200px; /* Make all input boxes take up 100% of the available width within their container */
+}
+.field-gap {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
