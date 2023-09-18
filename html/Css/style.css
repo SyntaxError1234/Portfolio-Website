@@ -24,12 +24,14 @@
   list-style: none;
   display:inline;
   padding-right: 32px;
-  
+  border:none;
+  background-color: rgb(85,164,191);
 }
 
-#home, #about{
-  text-decoration: none;
+.home:hover,.about:hover{
+  color:#ffff0d
 }
+
 
 div h1{
   text-align:center;
