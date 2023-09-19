@@ -1,5 +1,9 @@
 body {
     font-family: Arial, sans-serif;
+    background-image:url("https://img.freepik.com/free-vector/realistic-neon-lights-background_23-2148907367.jpg?w=900&t=st=1695146972~exp=1695147572~hmac=ceda969dcfecb5282f0e3d51955fd4f9cdd8e9d48831e00656b0054d6a2246ab");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,11 +16,11 @@ body {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
 }
 
 .log{
-    width:auto;
+    width:300px;
 }
 
 .login-container h2 {
