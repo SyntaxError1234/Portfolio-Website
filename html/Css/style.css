@@ -20,7 +20,7 @@
   text-align: end;
 }
 
-.home,.about{
+.home,.about,.login{
   list-style: none;
   display:inline;
   padding-right: 32px;
@@ -28,7 +28,7 @@
   background-color: rgb(85,164,191);
 }
 
-.home:hover,.about:hover{
+.home:hover,.about:hover,.login:hover{
   color:#ffff0d
 }
 
@@ -55,9 +55,9 @@ h3{
   text-align:center;
 }
 
-  .circle{
-    justify-content: center;
-  }
+.circle{
+  justify-content: center;
+}
   
 body{
   background-image:url(https://images.hdqwalls.com/download/abstract-blue-texture-4k-cl-1080x1920.jpg);
