@@ -1,6 +1,6 @@
-/* body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url('https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg?w=1060&t=st=1695313673~exp=1695314273~hmac=1ab4d69badbe87f9839ca084bfdcc2d5b6d56d5f0a63f3e6741716214c2f6232 ');
+body {
+    font-family: Helvetica, sans-serif;
+    background-image: url('signupbg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,20 +11,23 @@
     margin: 0;
 }
 
+h2{
+    color:#91928c;
+}
+
 .signup-form {
-    background-color: white;
+    background-color: rgba(17,42,59,0.8);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 10px 5px rgb(0, 0, 0) inset;
-    background-image: url('https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?t=st=1695315570~exp=1695316170~hmac=54820f2fb611f6db0952e19138ef4ff8fb1651eeb0f32374025d913ce50713b1');
 }
 
 .form-group {
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 0;
     margin-right: 20px;
 }
 
@@ -34,12 +37,17 @@
     margin-bottom: 5px;
 }
 
+label{
+    color:#91928c;
+}
+
 .form-group input[type="text"],
 .form-group input[type="password"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    
 }
 
 .form-group input[type="checkbox"] {
@@ -47,8 +55,8 @@
 }
 
 .signup-button {
-    background-color: #007BFF;
-    color: white;
+    background-color: #a7aa9b;
+    color: #0a0a23;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -76,4 +84,4 @@
 }
 .signup-button.clicked {
     background-color: orange;
-} */
+} 
