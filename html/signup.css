@@ -1,6 +1,6 @@
 body {
     font-family: Helvetica, sans-serif;
-    background-image: url('signupbg.jpeg');
+    background-image: url('signupbgg.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,18 +11,27 @@ body {
     margin: 0;
 }
 
-h2{
-    color:#91928c;
+.signicon{
+    background-image: url(blankpfp.jpg);
+    width:30px;
+    height: 30px;
+    background-size: contain;
+    position:relative;
+    padding:20px;
+    border-radius:50%;
+    left:41%;
+
 }
 
 .signup-form {
-    background-color: rgba(17,42,59,0.8);
+    background-color: rgba(1,214,194,0.8);
     padding: 20px;
+    width:500px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 10px 5px rgb(0, 0, 0) inset;
+    box-shadow: 5px 5px 10px rgba(0, 51, 94, 0.3);
+    box-shadow: 0 0 10px 5px rgb(0, 51, 94) inset;
 }
 
 .form-group {
@@ -38,7 +47,7 @@ h2{
 }
 
 label{
-    color:#91928c;
+    color:#00335e;
 }
 
 .form-group input[type="text"],
@@ -54,9 +63,10 @@ label{
     margin-right: 5px;
 }
 
+
 .signup-button {
-    background-color: #a7aa9b;
-    color: #0a0a23;
+    background-color: #00335d;
+    color: #0f0f;
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
