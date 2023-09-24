@@ -13,10 +13,10 @@ body {
 }
 
 .login-container {
-    background-color: #a978d1;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(64px);
 }
 
 .log{
@@ -38,6 +38,10 @@ label {
     margin-bottom: 5px;
 }
 
+label,h2{
+    color:#fef;
+}
+
 input[type="text"],
 input[type="password"] {
     width: 100%;
@@ -47,7 +51,7 @@ input[type="password"] {
 }
 
 .btn {
-    background-color: #007bff;
+    background-color: #ff56b3;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -56,5 +60,5 @@ input[type="password"] {
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #ee82ee;
 }

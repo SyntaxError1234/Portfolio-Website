@@ -38,7 +38,7 @@ body {
 }
 
 #container {
-	background-color: #FFF;
+	backdrop-filter: blur() saturate(50%);
 	margin: 80px 10%;
 	padding: 30px 60px;
 	border-radius: 20px;
