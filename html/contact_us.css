@@ -6,16 +6,35 @@ body {
     padding: 30px;
     color: #224;
 }
-
+header h1{
+    font-size: 40px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header p{
+    font-size: 20px;
+}
+.title h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.title p{
+    font-size: 20px;
+}
+.contact-card h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+ul{
+    list-style-type: none
+}
 header {
     display: block;
     text-align: center;
     align-items: center;
 }
 
-span,h4{
+/* span,h4{
     display: inline;
-}
+} */
 
 .container,.contact2,.contact-card {
 	backdrop-filter: blur() saturate(60%);
@@ -32,5 +51,4 @@ span,h4{
 
 .help.label,.help.textarea{
     display: inline-flex;
-
 }
