@@ -1,0 +1,36 @@
+body {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);    font: sans-serif, Tahoma;
+
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px;
+    color: #224;
+}
+
+header {
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+span,h4{
+    display: inline;
+}
+
+.container,.contact2,.contact-card {
+	backdrop-filter: blur() saturate(60%);
+	margin: 80px 10%;
+	padding: 30px 60px;
+	border-radius: 20px;
+	box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
+}
+
+.title{
+    margin: 80px 10%;
+	padding: 0;
+}
+
+.help.label,.help.textarea{
+    display: inline-flex;
+
+}
