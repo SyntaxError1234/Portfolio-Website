@@ -18,6 +18,7 @@ h3:not(:last-child) {
 }
 
 body {
+    overflow: hidden;
     font: sans-serif, Tahoma;
     display: block;
     text-align: center;
