@@ -3,8 +3,8 @@ body {
 
     justify-content: center;
     min-height: 100vh;
-    padding: 30px;
-    color: #224;
+    padding: 10px;
+    color: #0a0a23;
 }
 header h1{
     font-size: 40px;
@@ -32,14 +32,21 @@ header {
     align-items: center;
 }
 
-/* span,h4{
-    display: inline;
-} */
+.contact-card-left,.contact-card-right{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 300px;
+    padding: 20px 120px;
+    font-size: large;
+} 
 
 .container,.contact2,.contact-card {
 	backdrop-filter: blur() saturate(60%);
 	margin: 80px 10%;
-	padding: 30px 60px;
+	padding: 5px 60px;
 	border-radius: 20px;
 	box-shadow: 0 3px 26px 0 rgba(0,0,0,0.20);
 }
