@@ -1,123 +1,111 @@
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  margin:0;
-  padding:0
+
+.header {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #cccccc88;
+  
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+
 }
 
 
-ul{
-  position:absolute;
-  top:10%;
-  left: 85%;
-  transform: translate(-50%,-50%);
-  display:flex;
-}
 
-ul li{
+
+.nav {
+  position: absolute;
   list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  right: 0;
 }
 
-ul li a{
+.nav li {
+  margin-right: 20px;
+  padding: 5px;
+  text-decoration: none;
+}
+
+ul li a {
   position: relative;
   display: block;
   text-transform: uppercase;
   margin: 20px 0;
   padding: 10px 20px;
   text-decoration: none;
-  color:#fde907;
+  color: #0a0a99;
   font-family: sans-serif;
   font-size: 18px;
   font-weight: 600;
   transition: 0.5s;
-  z-index:1;
+  z-index: 1;
 }
 
-ul li a:before{
+ul li a:before {
   content: '';
   position: absolute;
-  top:0; left:0;
-  width:100%; height: 100%;
-  border-top: 2px solid #fde907;
-  border-bottom: 2px solid #fde907;
-  transform:scaleY(2);
-  opacity:0;
-  transition:0.3s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #aaea07;
+  border-bottom: 2px solid #aaea07;
+  transform: scaleY(2);
+  opacity: 0;
+  transition: 0.3s;
 }
 
-ul li a:after{
+ul li a:after {
   content: '';
   position: absolute;
-  top:2px; left:0;
-  width:100%; height: 100%;
-  border-top: 2px solid #fde907;
-  border-bottom: 2px solid #fde907;
-  transform:scaleY(0);
-  opacity:0;
-  transition:0.3s;
-  z-index:-1;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 2px solid #aaea07;
+  border-bottom: 2px solid #aaea07;
+  transform: scaleY(0);
+  opacity: 0;
+  transition: 0.3s;
+  z-index: -1;
 
 }
 
-ul li a:hover{
-  color:#012822;
-  background-color: rgb(105,164,191)
+ul li a:hover {
+  color: #012822;
+  background-color: #cce
 }
 
-ul li a:hover:before{
-  transform:scaleY(1);
-  opacity:1;
+ul li a:hover:before {
+  transform: scaleY(1);
+  opacity: 1;
 }
 
-ul li a:hover:after{
-  transform:scaleY(1);
-  opacity:1;
+ul li a:hover:after {
+  transform: scaleY(1);
+  opacity: 1;
 }
 
-.toolbar-content {
-  text-align: center;
-  width:100%;
-  text-transform: uppercase;
-  padding: 36px;
-  background-color: rgb(85, 164, 191);
-  color: #fff;
-  border-bottom: 4px solid #444449;
-  
-}
 
-#toolbar{
-  
-  display:flex;
-  justify-content: end;
-  text-align: end;
-}
-
-div h1{
-  text-align:center;
-  width:auto;
-  font-size: 100px;
-    
-}
-header h1 p{
-  margin: 0%;
-}
-
-h1{
-  padding-inline-start: 100px;
-  font-size: 60px;
-}
-
-h2{
-  padding-inline-start: 100px;
-}
 h3{
   text-align:center;
 }
 
-.circle{
-  justify-content: center;
-}
+
+
   
 body{
   background-image:url(https://images.hdqwalls.com/download/abstract-blue-texture-4k-cl-1080x1920.jpg);
@@ -130,21 +118,23 @@ body{
   
 }
 
-.templates{
+
+.templates {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 20px 10px;
   gap: 16px;
-  
 
-  
+
+
 }
 
-#temp1, #temp2{
+#temp1,
+#temp2 {
   width: 300px;
   height: 500px;
 }
