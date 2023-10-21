@@ -108,14 +108,56 @@ h3{
 
   
 body{
-  background-image:url(https://images.hdqwalls.com/download/abstract-blue-texture-4k-cl-1080x1920.jpg);
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
+  
   margin: 0;
   font-family: sans-serif;
   
   
+}
+
+.op{
+  
+  color: #BFD402;
+  height:200px;
+  text-align:center;
+  padding-top:20px;
+  background: linear-gradient(to right, rgb(66, 39, 90), rgb(115, 75, 109));
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.choose{
+  height:250px;
+  background-color: #ff9;
+  color:rgb(109, 39, 92)
+}
+.choose > ul > li{
+  list-style-type: none;
+  display:inline-block;
+  margin:0;
+  padding:50px;
+  left:175px;
+  position: relative;
+  font-size:32px;
+  font-weight: 900;
+  text-align: center;
+  
+}
+.choose > ul > li >span{
+  display:flex;
+  width:200px;
+  font-weight: normal;
+  font-size:medium;
+  text-align:center;
+}
+#cap{
+  padding-top:20px;
+  text-align: center;
+  margin:0;
+}
+
+
+.tt{
+  margin:50px
 }
 
 
