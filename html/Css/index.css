@@ -154,12 +154,6 @@ body{
   margin:0;
 }
 
-
-.tt{
-  margin:50px 50px 0px 50px;
-}
-
-
 .templates {
   display: flex;
   flex-direction: row;
@@ -168,18 +162,19 @@ body{
   align-items: center;
   margin: 0 auto;
   padding: 20px 10px;
-  gap: 16px;
-
-
-
+  gap: 100px;
 }
 
-#temp1,
-#temp2 {
+#temp1,#temp2 {
   width: 300px;
-  height: 500px;
+  height: 400px;
+  
 }
-
+#temp2:hover,#temp1:hover 
+{
+  border: 6px solid #007bff; /* You can change the color as per your preference */
+  border-radius: 10px;
+}
 .text{
   background-image: url("Lamp.jpeg");
   box-sizing: border-box;
