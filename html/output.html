@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="output.js"></script> -->
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- page1 info -->
+    <p><span id="name"></span></p>
+    <p><span id="surname"></span></p>
+    <p><span id="city"></span></p>
+    <p><span id="country"></span></p>
+    <p><span id="pincode"></span></p>
+    <p><span id="phone"></span></p>
+    <p><span id="email"></span></p>
+    <!-- page2 info -->
+    <p><span id="title"></span></p>
+    <p><span id="employer"></span></p>
+    <p><span id="city2"></span></p>
+    <p><span id="country2"></span></p>
+    <p><span id="start"></span></p>
+    <p><span id="end"></span></p>
+    <script>
+        // Retrieve the values from sessionStorage page 1
+        var w = sessionStorage.getItem("name");
+        var surname = sessionStorage.getItem("surname");
+        var city = sessionStorage.getItem("city");
+        var country = sessionStorage.getItem("country");
+        var pincode = sessionStorage.getItem("pincode");
+        var email = sessionStorage.getItem("email");
+        var phone = sessionStorage.getItem("phone");
+        // Display the values on the output page from page 1
+        document.getElementById("name").innerText = w;
+        document.getElementById("surname").innerText = surname;
+        document.getElementById("city").innerText = city;
+        document.getElementById("country").innerText = country;
+        document.getElementById("pincode").innerText = pincode;
+        document.getElementById("email").innerText = email;
+        document.getElementById("phone").innerText = phone;
+        // Retrieve the values from sessionStorage page 2
+        var title = sessionStorage.getItem("title");
+        var employer = sessionStorage.getItem("employer");
+        var city = sessionStorage.getItem("city");
+        var country = sessionStorage.getItem("country");
+        var start = sessionStorage.getItem("start");
+        var end = sessionStorage.getItem("end");
+        // Display the values on the output page from page 1
+        document.getElementById("title").innerText = title;
+        document.getElementById("employer").innerText = employer;
+        document.getElementById("city").innerText = city;
+        document.getElementById("country").innerText = country;
+        document.getElementById("start").innerText = start;
+        document.getElementById("end").innerText = end;
+    </script>
+</body>
+</html>
