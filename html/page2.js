@@ -14,6 +14,6 @@ function submit()
     sessionStorage.setItem("country",country);
     sessionStorage.setItem("start",start);
     sessionStorage.setItem("end",end);
-    window.location.href = "page3.html";
-    // window.location.href = "output.html";
+    // window.location.href = "page3.html";
+    window.location.href = "output.html";
 }
