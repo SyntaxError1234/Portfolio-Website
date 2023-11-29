@@ -1,0 +1,28 @@
+html {
+    scroll-behavior: smooth;}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: "Roboto"
+}
+
+body {
+font-family: "Source Sans Pro"
+}
+
+#Activities {
+background-color: blue;
+}
+
+#contact_us {
+text-decoration: none;
+color: blue;
+}
+
+.a {
+text-decoration: none;
+}

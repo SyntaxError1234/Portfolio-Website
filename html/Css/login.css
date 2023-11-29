@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image:url("download.jpg");
+    background-image: url("download.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -19,8 +19,8 @@ body {
     backdrop-filter: blur(64px);
 }
 
-.log{
-    width:300px;
+.log {
+    width: 300px;
 }
 
 .login-container h2 {
@@ -29,7 +29,7 @@ body {
 
 .form-group {
     margin-bottom: 20px;
-    padding-right:20px;
+    padding-right: 20px;
 }
 
 label {
@@ -38,8 +38,9 @@ label {
     margin-bottom: 5px;
 }
 
-label,h2{
-    color:#fef;
+label,
+h2 {
+    color: #fef;
 }
 
 input[type="text"],

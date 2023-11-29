@@ -1,88 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Website</title>
-    <link rel="stylesheet" type="text/css" href="Css/index.css">
-    <script src="index.js"></script>
+  <title> Portfolio Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
 </head>
 
-<body>
-    <header>
-        <div class="header">
-            <span class="logo">Logo</span>
+<body class="w3-light-white w3-margin">
 
-            <h1><abbr title="Ankit Pankaj Poorv Yogender">APPY</abbr> Portfolio Website</h1>
+  <!-- Navigation bar with links -->
+  <div class="w3-bar w3-white w3-text-black" style="position: relative;">
+    <h2 class="w3-left w3-tag w3-pale-red w3-round"><abbr title="Ankit Pankaj Poorv Yogender">APPY</abbr></h2>
+    <a href="Feedback.html" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
+      style="margin-top:10px;">FEEDBACK
+    </a>
+    <a href="#Contact" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
+      style="margin-top:10px;">CONTACT</a>
+    <a href="#Activities" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
+      style="margin-top:10px;">TEMPLATES</a>
+    <a href="#Home" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-medium w3-right"
+      style="margin-top:10px;">HOME</a>
 
-            <nav class="nav">
-                <ul class="nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="Feedback.html">Feedback</a></li>
-                    <li><a href="contact_us.html">Contacts</a></li>
-                </ul>
-            </nav>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large"
+      style="margin-top:10px;" onclick="myFunction()">&#9776;</a>
+  </div>
 
-        </div>
+  <div id="demo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-small">
+    <a href="#Home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#Activities" class="w3-bar-item w3-button">ACTIVITIES</a>
+    <a href="#Contact" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+
+  <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+  <div class="w3-content" style="max-width:1600px">
+
+    <!-- Image header -->
+    <header class="w3-display-container w3-wide" style="padding-bottom:32px;" id="Home">
+      <img class="w3-image" src="ok.jpg" alt="Photo by Jamie Street" width="1600" height="1060">
+      <div class="w3-display-left w3-padding-large">
+        <h3 class="w3-text-white"><b>From intuitive design features to built-in marketing tools,<br> discover the
+            complete solution for building<br> a portfolio that stands out online.</b> </h3>
+        <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>Showcase your<br> work with an<br> online portfolio</b></h1>
+        <h6><button class="w3-button w3-round w3-pale-red w3-padding-large w3-large w3-hover-opacity-off">
+            <a href="#Contact" class="a">Get Started</a></button></h6>
+      </div>
     </header>
 
-    <main>
-        <div class="text">
-            
-            <a id="text2">
-                <b>Showcase your<br> work with an<br> online portfolio</b>
+    <div class="w3-white" id="Activities">
+      <div class="w3-container">
+        <div class="w3-center w3-padding-32">
+          <h2 class="w3-wide">Templates</h2>
+          <p class="w3-opacity"><i>Find the right template for you</i></p><br>
+
+        </div>
+
+        <div class="w3-row-padding" style="margin:0 -16px">
+          <div class="w3-third">
+            <a href="page1.html">
+              <img src="https://cdn.discordapp.com/attachments/1147215011840794706/1147436018111369317/1092.jpg"
+                alt="Photo by Meritt Thomas" style="width:100%" class="w3-hover-opacity">
             </a>
-            <p id="text1"><br>From intuitive design features to built-in marketing tools,<br> discover the complete solution
-                for building<br> a portfolio that stands out online.</p><input type="button" value="Get Started"
-                class="ho">
+
+          </div>
+          <div class="w3-third">
+            <a href="page1.html">
+              <img src="https://cdn.discordapp.com/attachments/1147215011840794706/1147435798787018762/5192055.jpg"
+                alt="Photo by Humphrey Muleba" style="width:100%" class="w3-hover-opacity">
+            </a>
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="op">
-            <h1>The Perfect <span>Touch</span></h1>
-            <h2>Custom portfolio and resume tailored to your style and space.</h2>
-        </div>
+  <div class="w3-white" id="Contact">
+    <div class="w3-container w3-padding-32">
+      <div class="w3-center w3-padding-32">
+        <h2 class="w3-wide">Let's work together...</h2>
+        <p class="w3-opacity"><i>Just send us a message or <a href="contact_us.html" id="contact_us">Call us</a></i></p>
+        <br>
+        <p class="w3-white w3-text-black w3-left-align"></p>
+      </div>
 
-        <div class="choose">
-            <h3 id="cap">HOW IT WORKS</h3>
-            <ul>
-                <li>-1-
-                    <span>Choose any one of the templates of your choice.</span>
-                </li>
-                <li>-2-
-                    <span>Fill in the details asked and make sure to keep them correct as much as possible.</span>
-                </li>
-                <li>-3-
-                    <span>Your portfolio will be shown. You can download it. It's that simple!</span>
-                </li>
-            </ul>
-        </div>
-
-        <div class="tt">
-            <h3>
-                Templates
-            </h3>
-            <section class="templates">
-                <a href="page1.html">
-                    <img id="temp2"
-                        src="https://cdn.discordapp.com/attachments/1147215011840794706/1147436018111369317/1092.jpg"
-                        alt="Template 2">
-                </a>
-
-                <a href="page1.html">
-                    <img id="temp1"
-                        src="https://cdn.discordapp.com/attachments/1147215011840794706/1147435798787018762/5192055.jpg"
-                        alt="Template 1">
-                </a>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <h2 class="center">Let's work together...</h2>
-        <p class="center"><i>Just send us message or <a href="contact_us.html">Contact Us</a></i></p>
-    </footer>
-
-
+    </div>
+  </div>
 </body>
 
 </html>
