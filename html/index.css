@@ -26,3 +26,9 @@ color: blue;
 .a {
 text-decoration: none;
 }
+.w3-third{
+    border: 0;
+    overflow: hidden;
+    box-shadow:2px 2px 5px black ;
+    margin-right: 1em;
+}
