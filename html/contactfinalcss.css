@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif, Arial, Helvetica;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    background-image: url(contactpage.png);
+}
+
+.container {
+    position: relative;
+    width: 900px;
+    height: 550px;
+    
+    overflow: hidden;
+    border: 10px solid black ;
+    border-radius: 20px;
+}
+.container form {
+    position: absolute;
+    inset: 4px;
+    
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.container form h1 {
+    color: #b9b3b3;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.container form .item {
+    position: relative;
+    margin-top: 35px;
+}
+
+.container form .item input {
+    width: 250px;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+
+    color: #000;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #000; /* Add this line for underline effect */
+    
+}
+
+.container form .item span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.container form .item input:valid ~span,
+.container form .item input:focus ~span {
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-25px);
+}
+
+.container form .item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.container form .item input:valid ~i,
+.container form .item input:focus ~i {
+    transform: translateY(-44px);
+}
+
+.container form .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container form .links a {
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.container form .links a:hover,
+.container form .links a:nth-child(2) {
+    color: #fff;
+}
+
+.container form input[type="submit"] {
+    border: 2px;
+    outline: solid;
+    padding: 9px 25px;
+    background: #685aff;
+    color:white;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 150px;
+    margin-top: 10px;
+}
+
+.container form input[type="submit"]:active {
+    opacity: 0.8;
+}

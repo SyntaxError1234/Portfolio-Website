@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    background-image: url(https://images.pexels.com/photos/19031635/pexels-photo-19031635/free-photo-of-a-window-with-a-reflection-of-trees-and-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+}
+
+.box {
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background-image: url(https://images.pexels.com/photos/19031635/pexels-photo-19031635/free-photo-of-a-window-with-a-reflection-of-trees-and-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.box::before,
+.box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 388px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.box::after {
+    animation-delay: -3s;
+}
+
+.borderline::before,
+.borderline::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 388px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.borderline::before {
+    animation-delay: -1.5s;
+}
+
+.borderline::after {
+    animation-delay: -4.5s;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.box form {
+    position: absolute;
+    inset: 4px;
+    background-image: url(https://images.pexels.com/photos/19031635/pexels-photo-19031635/free-photo-of-a-window-with-a-reflection-of-trees-and-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.box form h2 {
+    color: #b9b3b3;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.box form .inputbox {
+    position: relative;
+    margin-top: 35px;
+}
+
+.box form .inputbox input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #fff; /* Add this line for underline effect */
+    transition: border-bottom 0.5s;
+}
+
+.box form .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.box form .inputbox input:valid ~span,
+.box form .inputbox input:focus ~span {
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-25px);
+}
+
+.box form .inputbox::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.box form .inputbox input:valid ~i,
+.box form .inputbox input:focus ~i {
+    transform: translateY(-44px);
+}
+
+.box form .links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.box form .links a {
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.box form .links a:hover,
+.box form .links a:nth-child(2) {
+    color: #fff;
+}
+
+.box form input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.box form input[type="submit"]:active {
+    opacity: 0.8;
+}
+
