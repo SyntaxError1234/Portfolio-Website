@@ -29,10 +29,14 @@
             <div class="item">
                 <textarea rows="4" cols="80" placeholder="How can we help you? Describe your problem here."></textarea>
             </div>
-            <input type="submit" value="Send Message">
-        </form>
+            <input type="submit" value="Send Message"><input type="button" id="my_button" value="Home" style="float:right;"></input>        </form>
     </div>
-
+<script>
+    document.getElementById('my_button').onclick = function() {
+        // Redirect to the desired link
+        window.location.href = 'index.html';
+    };
+</script>
 </body>
 
 </html>

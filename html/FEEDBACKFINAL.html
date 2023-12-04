@@ -29,13 +29,18 @@
                 <textarea id="comments" name="comments" rows="4" required></textarea>
             </div>
             <input type="submit" onclick="message()" value="Submit" class="submit">
+            <input type="button" id="my_button" value="Home">
         </form>
     </div>
 
     <script>
         function message() {
             window.alert('Your Feedback is submitted !!')
-        }
+        };
+        document.getElementById('my_button').onclick = function() {
+        // Redirect to the desired link
+        window.location.href = 'index.html';
+    };
 
 
         document.getElementById('contactus').addEventListener('submit', function (e) {

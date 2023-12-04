@@ -143,7 +143,11 @@ form .inputbox input[type="submit"]{
     font-weight:500;
     cursor:pointer;
 }
-
+form .inputbox input[type="button"]{
+    background:#2198f3;
+    font-weight:500;
+    cursor:pointer;
+}
 
 
 
@@ -220,39 +224,31 @@ form .inputbox1 input[type="submit"]{
     background: #685aff;   
     color:white; 
 }
+.submit{
+    position: absolute;
+    top:160px;
+    width:100px;
+    height:30px;
+    left:80px;
+    background: #685aff;   
+    color:white; 
+}
 .submit:hover{
     background:linear-gradient(to bottom, rgb(90,90,128), #b2c1ee)
 }
 
-
-
-.tabs{
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 60%; /* Adjust width as needed */
-    top: 10px; /* Adjust the top position */
-    left: 310px;
-    background: transparent; /* Example background color */
-    z-index: 1000;
+#my_button{
+    position: absolute;
+    top:160px;
+    width:100px;
+    height:30px;
+    left:200px;
+    background: #685aff;   
+    color:white; 
 }
-.tabs input{
-    visibility: hidden;
-    display: none;
-    
 
 
-}
-.tabs-background {
-    position: fixed;
-    width: 100%; /* Adjust width as needed */
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5); /* Example background color */
-    backdrop-filter: blur(0); /* Apply blur effect */
-    z-index: 999; /* Set z-index to be below the tabs */
-}
+
 .buttons{
     position: relative;
     display: flex;
