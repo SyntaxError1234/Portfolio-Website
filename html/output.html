@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="output.js"></script> -->
-    <link rel="stylesheet" href="output.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <title>Document</title>
+  <script src="output.js"></script>
 </head>
+
 <body>
-    <!-- page1 info -->
-    <p><span id="name"></span></p>
-    <p><span id="surname"></span></p>
-    <p><span id="city"></span></p>
-    <p><span id="country"></span></p>
-    <p><span id="pincode"></span></p>
-    <p><span id="phone"></span></p>
-    <p><span id="email"></span></p>
-    <!-- page2 info -->
-    <p><span id="title"></span></p>
-    <p><span id="employer"></span></p>
-    <p><span id="city2"></span></p>
-    <p><span id="country2"></span></p>
-    <p><span id="start"></span></p>
-    <p><span id="end"></span></p>
-    <script>
-        // Retrieve the values from sessionStorage page 1
-        var w = sessionStorage.getItem("name");
-        var surname = sessionStorage.getItem("surname");
-        var city = sessionStorage.getItem("city");
-        var country = sessionStorage.getItem("country");
-        var pincode = sessionStorage.getItem("pincode");
-        var email = sessionStorage.getItem("email");
-        var phone = sessionStorage.getItem("phone");
-        // Display the values on the output page from page 1
-        document.getElementById("name").innerText = w;
-        document.getElementById("surname").innerText = surname;
-        document.getElementById("city").innerText = city;
-        document.getElementById("country").innerText = country;
-        document.getElementById("pincode").innerText = pincode;
-        document.getElementById("email").innerText = email;
-        document.getElementById("phone").innerText = phone;
-        // Retrieve the values from sessionStorage page 2
-        var title = sessionStorage.getItem("title");
-        var employer = sessionStorage.getItem("employer");
-        var city = sessionStorage.getItem("city");
-        var country = sessionStorage.getItem("country");
-        var start = sessionStorage.getItem("start");
-        var end = sessionStorage.getItem("end");
-        // Display the values on the output page from page 1
-        document.getElementById("title").innerText = title;
-        document.getElementById("employer").innerText = employer;
-        document.getElementById("city").innerText = city;
-        document.getElementById("country").innerText = country;
-        document.getElementById("start").innerText = start;
-        document.getElementById("end").innerText = end;
-    </script>
+  <header>
+    <h1><span id="name"></span><span id="surname"></span></h1>
+    <p><span id="title_main"></span></p>
+  </header>
+
+  <section>
+    <h2>CONTACT</h2>
+    <div class="contact">
+      <p><span id="location"></span></p>
+      <p><span id="phone"></span></p>
+      <p><span id="email"></span></p>
+    </div>
+    <hr>
+
+    <h2>ABOUT ME</h2>
+    <p id="about"></p>
+    <hr>
+
+    <h2>TECHNICAL SKILLS</h2>
+    <ul id="skills">
+      <li id="skill1"></li>
+      <li id="skill2"></li>
+      <li id="skill3"></li>
+      <li id="skill4"></li>
+      <li id="skill5"></li>
+    </ul>
+    <hr>
+
+    <h2>EXPERIENCE</h2>
+    <p>
+      <b id="title_1"></b>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+
+      <span id="from1"></span>-<span id="till1"></span> <br> <span id="employer"></span>
+    <ul>
+      <li id="exp1"></li>
+      <li id="exp2"></li>
+      <li id="exp3"></li>
+    </ul>
+    </p>
+    <hr>
+
+    <h2>PROJECT</h2>
+    <p><b id="proname"></b>
+      &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+      <span id="from2"></span>-<span id="till2"></span>
+    <ul>
+      <li id="pro1"></li>
+      <li id="pro2"></li>
+      <li id="pro3"></li>
+    </ul>
+    </p>
+  </section>
+  <script>
+    var w = localStorage.getItem("name");
+    var surname = localStorage.getItem("surname");
+    var location = localStorage.getItem("location");
+    var email = localStorage.getItem("email");
+    var phone = localStorage.getItem("phone");
+
+    document.getElementById("name").innerText = w;
+    document.getElementById("surname").innerText = surname;
+    document.getElementById("location").innerText = location;
+    document.getElementById("email").innerText = email;
+    document.getElementById("phone").innerText = phone;
+  </script>
 </body>
+
 </html>

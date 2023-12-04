@@ -42,7 +42,7 @@ figure{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;    
-    height: 350px;
+    height: 250px;
     padding: 35px;
     border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 20px;
@@ -50,7 +50,13 @@ figure{
     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(15px);
 }
-
+button{
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+}
 ul {
     list-style: none;
     padding: 0;

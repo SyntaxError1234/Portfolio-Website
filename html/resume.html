@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+        }
+    
+        header {
+          background-color: #333;
+          color: #fff;
+          text-align: center;
+          padding: 1em;
+        }
+    
+        section {
+          max-width: 21cm;
+          margin: 20px auto;
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    
+        h2,
+        h3 {
+          /* color: #333; */
+          color: rgb(247, 215, 36);
+        }
+    
+        p {
+          line-height: 1.6;
+          color: #666;
+        }
+    
+        #skills {
+          list-style: none;
+          padding: 0;
+        }
+    
+        li {
+          margin-bottom: 10px;
+        }
+    
+        hr {
+          /* border: 1px solid #ddd; */
+          border: 1px solid gold;
+          margin: 20px 0;
+        }
+    
+        .contact {
+          display: flex;
+          justify-content: space-between;
+        }
+      </style>
+</head>
+<body>
+    <!-- page1 info -->
+    <header>
+        <h1><span id="name"></span><span id="surname">DSFS</span></h1>
+        <p><span id="title_main"></span></p>
+      </header>
+    
+      <section>
+        <h2>CONTACT</h2>
+        <div class="contact">
+          <p><span id="location"></span></p>
+          <p><span id="phone"></span></p>
+          <p><span id="email"></span></p>
+        </div>
+        <hr>
+    
+        <h2>ABOUT ME</h2>
+        <p id="about"></p>
+        <hr>
+    
+        <h2>TECHNICAL SKILLS</h2>
+        <ul id="skills">
+          <li id="skill1"></li>
+          <li id="skill2"></li>
+          <li id="skill3"></li>
+          <li id="skill4"></li>
+          <li id="skill5"></li>
+        </ul>
+        <hr>
+    
+        <h2>EXPERIENCE</h2>
+        <p>
+          <b id="title_1"></b>
+            &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+    
+          <span id="from1"></span>-<span id="till1"></span> <br> <span id="employer"></span>
+          <ul>
+            <li id="exp1"></li>
+            <li id="exp2"></li>
+            <li id="exp3"></li>
+          </ul>
+        </p>
+        <hr>
+    
+        <h2>PROJECT</h2>
+        <p><b id="proname"></b>
+          &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;
+          <span id="from2"></span>-<span id="till2"></span>
+          <ul>
+            <li id="pro1"></li>
+            <li id="pro2"></li>
+            <li id="pro3"></li>
+          </ul>
+        </p>
+      </section>
+    <script>
+    // Retrieve the values from sessionStorage Contact
+    var name = sessionStorage.getItem("name");
+    var surname = sessionStorage.getItem("surname");
+    var location = sessionStorage.getItem("location");
+    var email = sessionStorage.getItem("email");
+    var phone = sessionStorage.getItem("phone");
+    // Display the values on the output page from Contact
+    document.getElementById("name").innerText = name;
+    document.getElementById("surname").innerText = surname;
+    document.getElementById("location").innerText = location;
+    document.getElementById("email").innerText = email;
+    document.getElementById("phone").innerText = phone;
+    // Retrieve the values from sessionStorage About
+    var about = sessionStorage.getItem("about");
+    var skill2 = sessionStorage.getItem("skill1");
+    var skill3 = sessionStorage.getItem("skill2");
+    var skill4 = sessionStorage.getItem("skill3");
+    var skill5 = sessionStorage.getItem("skill4");
+    var skill6 = sessionStorage.getItem("skill5");
+    // Display the values on the output page from About
+    document.getElementById("about").innerText = about;
+    document.getElementById("skill1").innerText = skill1;
+    document.getElementById("skill2").innerText = skill2;
+    document.getElementById("skill3").innerText = skill3;
+    document.getElementById("skill4").innerText = skill4;
+    document.getElementById("skill5").innerText = skill5;
+    // Retrieve the values from sessionStorage Experience
+    var title_1 = sessionStorage.getItem("title_1");
+    var from1 = sessionStorage.getItem("from1");
+    var till1 = sessionStorage.getItem("till1");
+    var company = sessionStorage.getItem("company");
+    var exp1 = sessionStorage.getItem("exp1");
+    var exp2 = sessionStorage.getItem("exp2");
+    var exp3 = sessionStorage.getItem("exp3");
+    // Display the values on the output page from Experience
+    document.getElementById("title_1").innerText = title_1;
+    document.getElementById("from1").innerText = from1;
+    document.getElementById("till1").innerText = till1;
+    document.getElementById("employer").innerText = company;
+    document.getElementById("exp1").innerText = exp1;
+    document.getElementById("exp2").innerText = exp2;
+    document.getElementById("exp3").innerText = exp3;
+    // Retrieve the values from sessionStorage Project
+    var proname = sessionStorage.getItem("proname");
+    var from2 = sessionStorage.getItem("from2");
+    var till2 = sessionStorage.getItem("till2");
+    var pro1 = sessionStorage.getItem("pro1");
+    var pro2 = sessionStorage.getItem("pro2");
+    var pro3 = sessionStorage.getItem("pro3");
+    // Display the values on the output page from Project
+    document.getElementById("proname").innerText = proname;
+    document.getElementById("from2").innerText = from2;
+    document.getElementById("till2").innerText = till2;
+    document.getElementById("pro1").innerText = pro1;
+    document.getElementById("pro2").innerText = pro2;
+    document.getElementById("pro3").innerText = pro3;
+    </script>
+</body>
+</html>
