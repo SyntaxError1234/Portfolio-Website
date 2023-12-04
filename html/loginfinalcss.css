@@ -11,14 +11,19 @@ body {
     align-items: center;
     min-height: 100vh;
     
-    background-image: url(https://images.pexels.com/photos/19031635/pexels-photo-19031635/free-photo-of-a-window-with-a-reflection-of-trees-and-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(Lambda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .box {
     position: relative;
     width: 380px;
     height: 420px;
-    background-image: url(https://images.pexels.com/photos/19031635/pexels-photo-19031635/free-photo-of-a-window-with-a-reflection-of-trees-and-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+
+
+    background-image: url(Lambda.jpg);
     border-radius: 8px;
     overflow: hidden;
 }
@@ -74,7 +79,8 @@ body {
 .box form {
     position: absolute;
     inset: 4px;
-    background-image: url(https://images.pexels.com/photos/19031635/pexels-photo-19031635/free-photo-of-a-window-with-a-reflection-of-trees-and-water.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(Lambda.jpg);
+
     padding: 50px 40px;
     border-radius: 8px;
     z-index: 2;
@@ -177,5 +183,6 @@ body {
 
 .box form input[type="submit"]:active {
     opacity: 0.8;
+
 }
 
