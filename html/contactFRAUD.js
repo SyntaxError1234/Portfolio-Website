@@ -15,7 +15,7 @@ function submit()
     localStorage.setItem("phone", phone);
     localStorage.setItem("email", email);
     
-    window.location.href = "about.html";
+    window.location.href = "output.html";
 }
 function redirect()
 {
