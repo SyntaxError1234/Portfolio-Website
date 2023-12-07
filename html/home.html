@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+          integrity="sha512-..."
+          crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- Replace with actual FontAwesome link -->
+    <style>
+        #slider {
+            max-width: 100%;
+            overflow: hidden;
+        }
+
+        #slider img {
+            width: 100%;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div id="slider">
+    <img src="https://images.pexels.com/photos/2387793/pexels-photo-2387793.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Slide 1">
+    
+</div>
+
+<div class="container">
+
+    <div class="slide">
+
+
+        <div class="item" style="background-image: url(https://cdn.enhancv.com/single_column_resume_template_1_c1e24e6e04.png);">
+            <div class="content">
+                <div class="name">DENVER DAHL</div>
+                <div class="des">I am senior account manager.</div>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(https://d.novoresume.com/images/doc/minimalist-resume-template.png);">
+            <div class="content">
+                <div class="name">SOPHIA SMITH</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(https://www.my-resume-templates.com/wp-content/uploads/2023/05/professional-resume-template.jpg);">
+            <div class="content">
+                <div class="name">KHALIL RICHARDSON</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(https://www.indeed.com/profile/gatsby-assets/static/modern-2a8dff7a39f10580cfb46ad48e0036ac.png);">
+            <div class="content">
+                <div class="name">Yash kadian</div>
+                <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(https://s3.amazonaws.com/thumbnails.venngage.com/template/718ede28-807c-459a-9a22-bc6a60e1a2fa.png);">
+            <div class="content">
+                <div class="name">ADRIAN VALENTINO</div>
+                <div class="des">Maintained backend/frontend tools for canvas and widget-based editor.</div>
+                <button>See More</button>
+            </div>
+        </div>
+        <div class="item" style="background-image: url(https://cultivatedculture.com/wp-content/themes/x5-child/assets/images/templates/template5.jpg);">
+            <div class="content">
+                <div class="name">Hi, I'M Jonathan Watson</div>
+                <div class="des">I am a software engineer.</div>
+                <button>See More</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="button">
+        <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+</div>
+
+<script>
+    let currentSlide = 0;
+  const slides = document.querySelectorAll('#slider img');
+  const slideCount = slides.length;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.style.display = i === index ? 'block' : 'none';
+    });
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slideCount;
+    showSlide(currentSlide);
+  }
+
+  // Initial display
+  showSlide(currentSlide);
+
+  // Auto slide every 5 seconds
+  setInterval(nextSlide, 5000);
+
+
+  let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+
+        // Function to simulate a click on the next arrow
+        function clickNext() {
+            let items = document.querySelectorAll('.item');
+            document.querySelector('.slide').appendChild(items[0]);
+        }
+
+        // Set interval to automatically click the next arrow every 5 seconds
+        setInterval(clickNext, 5000);
+
+        // Initially hide the buttons, and make them visible after 5 seconds
+        setTimeout(() => {
+            document.querySelector('.button button').style.visibility = 'visible';
+        }, 5000);
+
+        // Event listeners for manual navigation
+        next.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item');
+            document.querySelector('.slide').appendChild(items[0]);
+        });
+
+        prev.addEventListener('click', function () {
+            let items = document.querySelectorAll('.item');
+            document.querySelector('.slide').prepend(items[items.length - 1]);
+        });
+</script>
+
+</body>
+</html>
