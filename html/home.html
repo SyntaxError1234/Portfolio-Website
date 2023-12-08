@@ -45,42 +45,48 @@
             <div class="content">
                 <div class="name">DENVER DAHL</div>
                 <div class="des">I am senior account manager.</div>
-                <button>See More</button>
+                <button class="seeMoreButton">See More</button>
+
             </div>
         </div>
         <div class="item" style="background-image: url(https://d.novoresume.com/images/doc/minimalist-resume-template.png);">
             <div class="content">
                 <div class="name">SOPHIA SMITH</div>
                 <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                <button>See More</button>
+                <button class="seeMoreButton">See More</button>
+
             </div>
         </div>
         <div class="item" style="background-image: url(https://www.my-resume-templates.com/wp-content/uploads/2023/05/professional-resume-template.jpg);">
             <div class="content">
                 <div class="name">KHALIL RICHARDSON</div>
                 <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                <button>See More</button>
+                <button class="seeMoreButton">See More</button>
+
             </div>
         </div>
         <div class="item" style="background-image: url(https://www.indeed.com/profile/gatsby-assets/static/modern-2a8dff7a39f10580cfb46ad48e0036ac.png);">
             <div class="content">
                 <div class="name">Yash kadian</div>
                 <div class="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum!</div>
-                <button>See More</button>
+                <button class="seeMoreButton">See More</button>
+
             </div>
         </div>
         <div class="item" style="background-image: url(https://s3.amazonaws.com/thumbnails.venngage.com/template/718ede28-807c-459a-9a22-bc6a60e1a2fa.png);">
             <div class="content">
                 <div class="name">ADRIAN VALENTINO</div>
                 <div class="des">Maintained backend/frontend tools for canvas and widget-based editor.</div>
-                <button>See More</button>
+                <button class="seeMoreButton">See More</button>
+
             </div>
         </div>
         <div class="item" style="background-image: url(https://cultivatedculture.com/wp-content/themes/x5-child/assets/images/templates/template5.jpg);">
             <div class="content">
                 <div class="name">Hi, I'M Jonathan Watson</div>
                 <div class="des">I am a software engineer.</div>
-                <button>See More</button>
+                <button class="seeMoreButton">See More</button>
+
             </div>
         </div>
 
@@ -133,7 +139,7 @@
             document.querySelector('.button button').style.visibility = 'visible';
         }, 5000);
 
-        // Event listeners for manual navigation
+       
         next.addEventListener('click', function () {
             let items = document.querySelectorAll('.item');
             document.querySelector('.slide').appendChild(items[0]);
@@ -143,6 +149,13 @@
             let items = document.querySelectorAll('.item');
             document.querySelector('.slide').prepend(items[items.length - 1]);
         });
+
+
+        document.querySelectorAll('.seeMoreButton').forEach(function(button) {
+        button.addEventListener('click', function() {
+            window.location.href = 'contact.html';
+        });
+    });
 </script>
 
 </body>
