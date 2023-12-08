@@ -11,7 +11,7 @@
 <body>
     <div class="box">
         <span class="borderline"></span>
-        <form>
+        <form method="#" action="#">
             <h2>
                 Log in
             </h2>
@@ -24,7 +24,7 @@
 
             </div>
             <div class="inputbox">
-                <input type="password" required="required">
+                <input type="password" required pattern=".{8,}" title="Password must be 8 characters long">
                 <span>Password</span>
 
             </div>
@@ -32,10 +32,15 @@
                 <a href="#">Forgot Password</a>
                 <a href="#">Sign up</a>
             </div>
-            <input type="submit" value="Login">
-
         </form>
     </div>
+    <button onclick="submit()">Login</button>
 </body>
-
+<script>
+    function submit()
+    {
+        window.alert('Login Successful!!!')
+        // document.write('done')
+    }
+</script>
 </html>
