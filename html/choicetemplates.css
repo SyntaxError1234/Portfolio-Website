@@ -1,0 +1,57 @@
+.header {
+    position: absolute;
+    width: 100%;
+    padding: 20px 10%;
+    background: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box; 
+    overflow: hidden;
+    top:0;
+  }
+  
+  .navbar {
+    display: flex;
+    max-width: 100%; 
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition:1s;
+  }
+  
+.navbar a:hover,
+.navbar a.active{
+    color:#685aff;
+}
+
+.flex-container {
+    position: absolute;
+    top:5vh;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    align-items: flex-start;margin: 10vh 0;
+  }
+
+  .flex-item {
+    flex: 0 0 calc(33% - 10px);
+    margin-bottom: 20px; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;}
+
+
+  .flex-item img {
+    width: 100%;
+    max-width:350px; 
+    height: auto; 
+    margin:auto;
+    border: 2px solid #0a0a23;
+  }
