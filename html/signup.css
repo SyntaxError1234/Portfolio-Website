@@ -1,97 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
-    font-family: Helvetica, sans-serif;
-    background-image: url('signupbgg.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.signicon{
-    background-image: url(blankpfp.jpg);
-    width:30px;
-    height: 30px;
-    background-size: contain;
-    position:relative;
-    padding:20px;
-    border-radius:50%;
-    left:41%;
+    min-height: 100vh;
+    
+    background-image: url(Lambda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 
 }
 
-.signup-form {
-    background-color: rgba(1,214,194,0.8);
-    padding: 20px;
-    width:500px;
+.box {
+    position: relative;
+    width: 380px;
+    height: 420px;
+
+
+    background-image: url(Lambda.jpg);
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.box::before,
+.box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 388px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.box::after {
+    animation-delay: -3s;
+}
+
+.borderline::before,
+.borderline::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 388px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, transparent, #ff2770, #ff2770, #ff2770);
+    z-index: 1;
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+
+.borderline::before {
+    animation-delay: -1.5s;
+}
+
+.borderline::after {
+    animation-delay: -4.5s;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.box form {
+    position: absolute;
+    inset: 4px;
+    background-image: url(Lambda.jpg);
+
+    padding: 50px 40px;
+    border-radius: 8px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.box form h2 {
+    color: #b9b3b3;
+    font-weight: 500;
     text-align: center;
-    box-shadow: 5px 5px 10px rgba(0, 51, 94, 0.3);
-    box-shadow: 0 0 10px 5px rgb(0, 51, 94) inset;
+    letter-spacing: 0.1em;
 }
 
-.form-group {
-    margin-bottom: 20px;
-    margin-left: 0;
-    margin-right: 20px;
+.box form .inputbox {
+    position: relative;
+    margin-top: 35px;
 }
 
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-label{
-    color:#00335e;
-}
-
-.form-group input[type="text"],
-.form-group input[type="password"] {
+.box form .inputbox input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    
-}
-
-.form-group input[type="checkbox"] {
-    margin-right: 5px;
-}
-
-
-.signup-button {
-    background-color: #00335d;
-    color: white;
+    background: transparent;
+    outline: none;
     border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
+    box-shadow: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    border-bottom: 2px solid #fff; /* Add this line for underline effect */
+    transition: border-bottom 0.5s;
 }
 
-.form-group .checkbox-label {
+.box form .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.box form .inputbox input:valid ~span,
+.box form .inputbox input:focus ~span {
+    color: #fff;
+    font-size: 0.75em;
+    transform: translateY(-25px);
+}
+
+.box form .inputbox::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transform: scaleX(0); /* Initially hidden */
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.box form .inputbox input:valid ~i,
+.box form .inputbox input:focus ~i {
+    transform: translateY(-44px);
+}
+
+.box form .links {
     display: flex;
-    align-items: center;
-}
-.form-group input[type="checkbox"] {
-    margin-right: 50px;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
-.form-group input[type="terms"]{
-    margin-bottom: 50px;
+.box form .links a {
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+    transition: color 0.5s;
 }
 
-.a{
-    display:flex;
-    align-items: center;
+.box form .links a:hover,
+.box form .links a:nth-child(2) {
+    color: #fff;
 }
-.signup-button.clicked {
-    background-color: orange;
-} 
+
+.box form input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+}
+
+.box form input[type="submit"]:active {
+    opacity: 0.8;
+
+}

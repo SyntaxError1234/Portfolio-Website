@@ -11,36 +11,29 @@
 <body>
     <div class="box">
         <span class="borderline"></span>
-        <form method="#" action="#">
-            <h2>
-                Log in
-            </h2>
+        <form action="#" method="post" onsubmit="return login()">
+            <h2>Log in</h2>
             <div class="inputbox">
                 <input type="text" required="required">
                 <span>Username</span>
-                <i>
-
-                </i>
-
             </div>
             <div class="inputbox">
                 <input type="password" required pattern=".{8,}" title="Password must be 8 characters long">
                 <span>Password</span>
-
             </div>
             <div class="links">
                 <a href="#">Forgot Password</a>
                 <a href="#">Sign up</a>
             </div>
+            <input type="submit" value="Login">
         </form>
     </div>
-    <button onclick="submit()">Login</button>
-</body>
-<script>
-    function submit()
-    {
-        window.alert('Login Successful!!!')
-        // document.write('done')
-    }
+    <!-- <button type="button" onclick="login()">Login</button> -->
+    <script>
+        function login() {
+            window.alert('Login Successful!!!');
+            // Additional logic can be added here if needed
+        }
+    </script>
 </script>
 </html>
