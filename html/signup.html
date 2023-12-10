@@ -9,36 +9,44 @@
 </head>
 
 <body>
-    <div class="signup-form">
-        <form action="#" method="post">
-            <div class="signicon"></div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" required placeholder="Email Id">
+    <div class="box">
+        <span class="borderline"></span>
+        <form onsubmit="return validateForm()">
+            <h2>Sign Up</h2>
+            <div class="inputbox">
+                <input type="text" name="username" required>
+                <span>Username</span>
             </div>
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required placeholder="New Username">
+            <div class="inputbox">
+                <input type="password" id="password" name="password" pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" title="At Least 8 Characters with at Least One Uppercase Letter and One Digit" required>
+                <span>Password</span>
             </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" required
-                    placeholder="Password">
+            <div class="inputbox">
+                <input type="password" id="confirmPassword" name="confirmPassword" pattern="^(?=.*[A-Z])(?=.*\d).{8,}$" title="Type the same password" required>
+                <span>Confirm Password</span>
             </div>
-            <div class="form-group">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm-password" required
-                    placeholder="Confirm Password">
+            <div class="links">
+                <a href="#">Forgot Password</a>
+                <a href="loginfinal.html">Log in</a>
             </div>
-            <div class="form-group">
-                <div class="a">
-                    <input type="checkbox" id="terms" name="terms" required>
-                    <label for="terms" >I agree to the terms and conditions</label>
-                </div>
-            </div>
-            <button type="submit" class="signup-button">Sign Up</button>
+            <input type="submit" value="Sign Up">
         </form>
     </div>
+    <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+    
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return false;
+            }
+    
+    
+            return alert("Signed Up"); 
+        }
+    </script>
+    
 </body>
 
 </html>
