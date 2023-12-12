@@ -49,7 +49,7 @@
                 <div class="content">
                     <div class="name">DENVER DAHL</div>
                     <div class="des">I am senior account manager.</div>
-                    <button class="seeMoreButton">See More</button>
+                    <button class="seeMoreButton" onclick="seemore()">See More</button>
 
                 </div>
             </div>
@@ -58,7 +58,7 @@
                 <div class="content">
                     <div class="name">SOPHIA SMITH</div>
                     <div class="des">I am a bank Teller.</div>
-                    <button class="seeMoreButton">See More</button>
+                    <button class="seeMoreButton" onclick="seemore()">See More</button>
 
                 </div>
             </div>
@@ -67,7 +67,7 @@
                 <div class="content">
                     <div class="name">KHALIL RICHARDSON</div>
                     <div class="des">Hello, I am Journalist.</div>
-                    <button class="seeMoreButton">See More</button>
+                    <button class="seeMoreButton" onclick="seemore()">See More</button>
 
                 </div>
             </div>
@@ -76,7 +76,7 @@
                 <div class="content">
                     <div class="name">Yash kadian</div>
                     <div class="des">I am a frontend developer</div>
-                    <button class="seeMoreButton">See More</button>
+                    <button class="seeMoreButton" onclick="seemore()">See More</button>
 
                 </div>
             </div>
@@ -85,7 +85,7 @@
                 <div class="content">
                     <div class="name">ADRIAN VALENTINO</div>
                     <div class="des">Maintained backend/frontend tools for canvas and widget-based editor.</div>
-                    <button class="seeMoreButton">See More</button>
+                    <button class="seeMoreButton" onclick="seemore()">See More</button>
 
                 </div>
             </div>
@@ -94,7 +94,7 @@
                 <div class="content">
                     <div class="name">Hi, I'M Jonathan Watson</div>
                     <div class="des">I am a software engineer.</div>
-                    <button class="seeMoreButton">See More</button>
+                    <button class="seeMoreButton" onclick="seemore()">See More</button>
 
                 </div>
             </div>
@@ -106,6 +106,10 @@
     </div>
 
     <script>
+        function seemore()
+        {
+            window.location.href = 'template.html'
+        }
         let currentSlide = 0;
         const slides = document.querySelectorAll('#slider img');
         const slideCount = slides.length;
