@@ -7,13 +7,11 @@ function submit()
     var pro2 = document.getElementById("pro2").value;
     var pro3 = document.getElementById("pro3").value;
     
-    // Store the values in sessionStorage
     sessionStorage.setItem("proname",proname);
     sessionStorage.setItem("from2",from);
     sessionStorage.setItem("till2",till);
     sessionStorage.setItem("pro1",pro1);
     sessionStorage.setItem("pro2",pro2);
     sessionStorage.setItem("pro3",pro3);
-    // window.location.href = "resume.html";
     window.location.href = "output.html";
 }

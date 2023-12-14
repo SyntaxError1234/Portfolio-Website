@@ -9,7 +9,6 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* background-color: #c6ae82; */
     background-image: url(top.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +17,6 @@ body::before{
     content:'';
     position: absolute;
     inset: 0;
-    /* background: url(img3.jpg); */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -263,17 +261,4 @@ form .inputbox1 input[type="submit"]{
     
     
 }
-/* .bottom label{
-    width:20%;
-    font-size:1.75em;
-    -webkit-text-stroke: 1px #fff;
-    color: transparent;
-    opacity: 0.3;
-    cursor:pointer;
-    transition: 0.5s;
 
-}
-.buttons label:hover{
-    opacity: 1;
-    filter:drop-shadow(0 0 10px #fff )drop-shadow(0 0 20px#fff) 
-} */

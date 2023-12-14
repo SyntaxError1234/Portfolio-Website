@@ -8,7 +8,7 @@ function submit()
     var exp2 = document.getElementById("exp2").value;
     var exp3 = document.getElementById("exp3").value;
     
-    // Store the values in sessionStorage
+    
     sessionStorage.setItem("title_1",title);
     sessionStorage.setItem("from1",from);
     sessionStorage.setItem("till1",till);
@@ -17,5 +17,5 @@ function submit()
     sessionStorage.setItem("exp2",exp2);
     sessionStorage.setItem("exp3",exp3);
     window.location.href = "project.html";
-    // window.location.href = "output.html";
+    
 }

@@ -124,7 +124,6 @@ body {
 	height: 2px;
 	background-color: var(--profile-theme);
 	transition: width 0.3s;
-	/*transition-timing-function: cubic-bezier(.64,.51,.16,.86);*/
 	transition-timing-function: cubic-bezier(.92,.57,.33,1.02);
 	transform: translate(-50%, 0);
 }
@@ -136,7 +135,6 @@ body {
 	width: 100%;
 }
 
-/* Detail section overall setting*/
 .detail {
 	flex: 1 0 0;
 	background-color: white;
@@ -193,7 +191,6 @@ body {
 	letter-spacing: 1.5px;
 }
 
-/* time line block in education section */
 .timeline-block {
 	position: relative;
 	padding-left: 30px;
@@ -241,7 +238,6 @@ body {
 	animation: circle 1.2s infinite;
 }
 
-/* Programming skills section */
 .pg-list, .tool-list, .favor-list {
 	padding: 0;
 	list-style: none;
@@ -318,7 +314,6 @@ body {
 	font-size: 1rem;
 	transform: translate(-50%, -50%);
 }
-/* Interests Section */
 .outer-frame {
 	border: 1px solid var(--color-gray-dark-3);
 	border-radius: 5px;

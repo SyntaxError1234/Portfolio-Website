@@ -65,16 +65,12 @@ header{
 
 table {
     border-collapse: collapse;
-    /* Merge cell borders */
     width: 100%;
 }
 
 th,
 td {
     border: 1px solid black;
-    /* Add a 1px black border to cells */
     padding: 8px;
-    /* Add padding for cell content */
     text-align: center;
-    /* Align text to the left in cells */
 }
