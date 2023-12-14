@@ -157,8 +157,8 @@ body {
 }
 
 .box form .links a {
-    font-size: 0.75em;
-    color: #8f8f8f;
+    font-size: 1em;
+    color: #689aff;
     text-decoration: none;
     transition: color 0.5s;
 }
@@ -171,8 +171,8 @@ body {
 .box form input[type="submit"] {
     border: none;
     outline: none;
-    padding: 9px 25px;
-    background: #fff;
+    padding: 9px 15px;
+    background: #ddd;
     cursor: pointer;
     font-size: 0.9em;
     border-radius: 4px;
